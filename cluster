@@ -1,0 +1,5 @@
+nginx upstream
+
+apache 
+  mod_proxy  ajp
+  mod_jk
