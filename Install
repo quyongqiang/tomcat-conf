@@ -1,0 +1,15 @@
+一般使用二进制格式安装，下载直接解压即可。编译需要使用java编译，而非C程序。
+
+tomcat.apache.org
+
+安装JDK，配置环境变量
+下载二进制格式tomcat
+
+
+tar -zxvf apache-tomcat-7.0.33.tar.gz -C /usr/local
+cd /usr/local
+ln -sv apache-tomcat-7.0.33 tomcat
+cd tomcat
+ls
+
+
