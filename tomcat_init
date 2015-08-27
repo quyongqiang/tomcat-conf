@@ -1,0 +1,21 @@
+#!/bin/bash
+# tomcat init script for linux
+# file /etc/init.d/tomcat
+# chmod /etc/init.d/tomcat
+# chkconfig --add tomcat
+# 
+
+
+# JAVA_HOME=
+CATALINA_HOME=/usr/local/tomcat
+export JAVA_HOME CATALINA_HOME
+
+# min heap memory 128M, max heap memory 256m
+# export CATALINA_OPTS="-Xms128m -Xmx256m"
+
+exec $CATALINA_HOME/bin/catalina.sh $*
+
+# service tomcat start
+# service tomcat stop
+# service tomcat configtest,  只能在停止时测试
+
