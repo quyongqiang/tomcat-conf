@@ -3,3 +3,12 @@ nginx upstream
 apache 
   mod_proxy  ajp
   mod_jk
+
+
+mod_proxy 能够实现基于会话持久连接，session保持
+mod_proxy_http
+mod_proxy_ajp
+mod_proxy_balancer
+
+mod_jk
+mod_jk2
