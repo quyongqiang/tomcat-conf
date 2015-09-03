@@ -1,0 +1,8 @@
+ <!--  refer: https://tomcat.apache.org/tomcat-7.0-doc/config/http.html#Connector_Comparison  -->
+ <Connector port="10005" protocol="HTTP/1.1"
+                acceptCount="10000" maxThreads="1000"
+               minSpareThreads="100"  maxSpareThreads="1000"
+                minProcessors="100"  maxProcessors="1000"
+               connectionTimeout="20000" URIEncoding="UTF-8"
+                redirectPort="8443" maxHttpHeaderSize="8192" />
+                
