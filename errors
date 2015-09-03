@@ -1,0 +1,10 @@
+Each incoming request requires a thread for the duration of that request.
+If more simultaneous requests are received than can be handled 
+by the currently available request processing threads, additional threads will be
+created up to the configured maximum (the value of the maxThreads attribute).
+If still more simultaneous requests are received, they are stacked up inside the
+server socket created by the Connector, up to the configured
+maximum (the value of the acceptCount attribute). Any further
+simultaneous requests will receive "connection refused" errors,
+until resources are available to process them.
+
