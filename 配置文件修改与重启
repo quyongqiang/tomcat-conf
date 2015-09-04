@@ -1,0 +1,14 @@
+#停止
+bin/catalina.sh stop
+
+vim conf/server.xml
+
+# 配置文件测试
+bin/catalina.sh configtest
+
+# 启动,需要等待tomcat完全停止才能启动
+bin/catalina.sh start
+
+# 查看端口是否启动，一般有三个端口
+netstat -ntlp | grep java
+
