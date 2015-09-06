@@ -1,1 +1,9 @@
 http://www.ibm.com/developerworks/cn/java/j-lo-tomcat1/
+
+nginx/ha--> tomcat
+
+nginx/ha--> varnish --> tomcat 
+
+nginx/ha--> varnish --> tomcat -->memcached --> mysql
+
+ 
