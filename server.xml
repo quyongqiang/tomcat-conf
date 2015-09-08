@@ -2,8 +2,11 @@
  
  # 线上验证过
  <Connector port="8080" protocol="HTTP/1.1"
-               acceptCount="10000" maxThreads="1000"
+               maxThreads="1000"    <!-- most important -->
+               acceptCount="10000" 
                minSpareThreads="100"
+               maxConnections="1000"
+               
                connectionTimeout="20000" URIEncoding="UTF-8"
                 redirectPort="8443" maxHttpHeaderSize="8192" />
 
