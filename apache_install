@@ -1,0 +1,3 @@
+
+# apache 整合tomcat编译参数
+./configure --prefix=/data/apache --with-pcre=/data/libs/pcre --with-included-apr --enable-so --enable-ssl --enable-cgi --enable-rewrite --with-zlib --with-pcre=/data/libs/pcre/   --enable-proxy --enable-proxy-http --enable-proxy-ajp
