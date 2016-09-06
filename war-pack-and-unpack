@@ -1,0 +1,18 @@
+title: 使用jar命令打包和解压war包
+
+1. 把当前目录下的所有文件打包成game.war
+cd game
+jar -cvfM0 game.war ./
+
+-c   创建war包
+-v   显示过程信息
+-f    
+-M
+-0   这个是阿拉伯数字，只打包不压缩的意思
+
+
+2. 解压game.war
+mkdir game
+cd game
+jar -xvf ../game.war
+解压到当前目录,注意会散落在当前目录，需要先建立game目录
