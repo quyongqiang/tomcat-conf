@@ -8,3 +8,6 @@ maximum (the value of the acceptCount attribute). Any further
 simultaneous requests will receive "connection refused" errors,
 until resources are available to process them.
 
+对以上的理解：
+每个请求需要一个线程处理，首先使用空闲线程，不够，再创建线程，知道达到maxThreads，然后再多请求就先接收下来，
+如果接收的请求达到acceptCount，其他请求就会被拒绝，connection refused.
