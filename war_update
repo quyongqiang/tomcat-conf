@@ -1,0 +1,11 @@
+# 有关war包部署的解释
+
+把一个新的war包放在webapps目录中，例如sample.war，该war包会被自动解压到sample
+目录中，如果移除sample.war，sample目录也会被移除，如果更新了sample.war，
+sample目录中的内容也会自动更新。
+
+
+留一个疑问，是否会自动更新？而无需重启tomcat?
+
+尽量避免重启tomcat，重启过程慢。不稳定。
+
