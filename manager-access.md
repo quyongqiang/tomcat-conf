@@ -1,4 +1,4 @@
-### add a user
+### 1. add a user
 file: tomcat-users.xml
 ```xml
 <role rolename="manager-gui"/>
@@ -9,7 +9,7 @@ file: tomcat-users.xml
 
 ```
 
-### config access
+### 2. config access
 file:  conf/Catalina/localhost/manager.xml 
 
 ```xml
